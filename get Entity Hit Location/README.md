@@ -36,7 +36,7 @@ system.runInterval(() => {
   }
 });
 ```
-https://youtu.be/76Nxs4uX3jo
+[![Watch the video](https://img.youtube.com/vi/76Nxs4uX3jo/0.jpg)](https://youtu.be/76Nxs4uX3jo)
 
 ### Example 2: Using a custom ray with location and direction
 
