@@ -36,6 +36,7 @@ system.runInterval(() => {
   }
 });
 ```
+https://youtu.be/76Nxs4uX3jo
 
 ### Example 2: Using a custom ray with location and direction
 
@@ -44,6 +45,7 @@ The following example demonstrates detecting an entity using a custom ray and sp
 ```javascript
 import { system, world } from "@minecraft/server";
 import { getEntityHitLocation } from "./getEntityHitLocation.js";
+
 system.runInterval(() => {
   const location = { x: 0, y: 0, z: 0 };
   const direction = { x: 1, y: 0, z: 0 };
