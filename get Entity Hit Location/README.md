@@ -7,7 +7,7 @@ A function that returns detailed information about a ray cast hit, including the
 - `@minecraft/server` module.
 
 ## Installation
-1. Clone or download this files.
+1. Clone or download the function file.
 2. Ensure you have the `@minecraft/server` module in your manifest.
 3. Import the `getEntityHitLocation` function into your script.
 
