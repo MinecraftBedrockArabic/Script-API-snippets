@@ -1,6 +1,6 @@
 # Structure Summon Detector
 
-A Minecraft Bedrock Edition script that allows you to detect specific block patterns and trigger entity summons when those patterns are completed.
+A Minecraft Bedrock Edition script that allows you to detect specific block patterns and trigger entity summons when those patterns are completed. Similar to the method used to spawn Wither Boss, Iron Golem and Snow Golem. 
 
 ## Features
 
