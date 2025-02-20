@@ -4,12 +4,14 @@ import {patternDebugger} from "./debugger.js";
 
 
 // Example usage:
+
+// 2D pattern (like the vanilla wither boss)
 const detector = new StructureDetector(
     {
         "*": undefined,
         "a": "minecraft:air",
         "s": "minecraft:stone",
-        "p": "minecraft:pumpkin"
+        "p": "minecraft:pumpkin" // the block that tigger the check.
     },
     [
         ["asa"],
@@ -22,6 +24,7 @@ const detector = new StructureDetector(
     }
 );
 
+// 3D pattern
 const detector2 = new StructureDetector(
     {
         "*": undefined,
@@ -30,9 +33,21 @@ const detector2 = new StructureDetector(
         "p": "minecraft:pumpkin"
     },
     [
-        ["ada"],
-        ["ddd"],
-        ["ppp"]
+        [
+            "aaa",
+            "ada",
+            "aaa",
+        ],
+        [
+            "ada",
+            "ddd",
+            "ada",
+        ],
+        [
+            "aaa",
+            "apa",
+            "aaa",
+        ]
     ],
     (dimension, pos) => {
         const entity = dimension.spawnEntity("minecraft:zombie_villager", pos);
@@ -46,4 +61,5 @@ world.afterEvents.playerPlaceBlock.subscribe(({ block, dimension }) => {
     detector2.detectStructure(dimension, block);
 });
 
+//Turn on the debugger
 patternDebugger()
